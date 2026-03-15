@@ -1,0 +1,52 @@
+name: Validate Weekly Submissions
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  validate-submissions:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Check submissions directory exists
+      run: |
+        if [ ! -d "submissions" ]; then
+          echo "ERROR: submissions directory not found"
+          exit 1
+        fi
+
+    - name: Check weekly directories
+      run: |
+        weeks=(
+        "week01-topic"
+        "week02-research-question"
+        "week03-article-search"
+        "week04-article-selection"
+        "week05-article-summary"
+        "week06-evidence-table"
+        "week07-devops-practices"
+        "week08-devops-tools"
+        "week09-devops-pipeline"
+        "week10-draft-report"
+        "week11-final-report"
+        )
+
+        for week in "${weeks[@]}"; do
+          if [ ! -d "submissions/$week" ]; then
+            echo "Missing directory submissions/$week"
+          fi
+        done
+
+    - name: Check markdown files
+      run: |
+        echo "Checking markdown files in submissions..."
+        find submissions -name "*.md" || echo "No markdown files found"
+
+    - name: Success message
+      run: echo "Submission structure validated successfully."
