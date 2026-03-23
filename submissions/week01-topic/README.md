@@ -1,4 +1,4 @@
-<img width="1433" height="757" alt="image" src="https://github.com/user-attachments/assets/017857d2-7fde-44a6-909c-4c7f4835dfb8" /># Week 01 – Topic Definition
+# Week 01 – Topic Definition
 
 Each group must define the topic of their project.
 
@@ -28,13 +28,9 @@ Create a markdown file inside:
 
 submissions/week01-topic/
 
-File name pattern:
+File name pattern: groupXX-topic.md
 
-groupXX-topic.md
-
-Example:
-
-group01-topic.md
+Example: group01-topic.md
 
 ---
 
