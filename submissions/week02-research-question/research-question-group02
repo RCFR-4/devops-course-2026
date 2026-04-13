@@ -21,7 +21,6 @@ Grupo 02
 ## Tema Escolhido (da Semana 01
 DevSecOps: Técnicas e Ferramentas de Segurança na Automação de Pipelines CI/CD
 
-
 ---
 
 ## Questão de Pesquisa Principal (RQ)
@@ -29,6 +28,7 @@ DevSecOps: Técnicas e Ferramentas de Segurança na Automação de Pipelines CI/
 De que forma a automação da análise estática de segurança (SAST) em pipelines de CI/CD contribui para reduzir custos, 
 tempo de correção e riscos de exposição de vulnerabilidades do software em produção?
 
+---
 
 ##  Questões de Pesquisa Secundárias (RQ1 – RQ3)
 
@@ -56,27 +56,17 @@ Como a integração de ferramentas de SAST em pipelines de CI/CD impacta a quali
 - Vulnerabilidades
 - Desenvolvimento Seguro 
 
-
 ---
 
 ##  Descrição do Problema
-
-Escreva um parágrafo curto (5 a 8 linhas) explicando:
-
 O DevOps promove a aceleração da entrega de software, promovendo ciclos de integração e deploy cada vez mais curtos. 
 Visando a era da IA na engenharia de software e o uso de agentes de IA cada vez mais frequente no ciclo de desenvolvimento, 
 devemos nos atentar sobre como a segurança está sendo tratada no desenvolvimento de software e assim desmistificar que a
 segurança deve ser tratada de forma final e isolada no ciclo de desenvolvimento de software.
 
-
 ---
 
 ##  Contribuição Esperada
-
-Explique brevemente (4 a 6 linhas):
-
-- O que o estudo pretende descobrir  
-- Como isso pode contribuir para o entendimento das práticas DevOps  
 
 O estudo pretende descobrir como a automação da análise estática de segurança (SAST) em pipelines de CI/CD pode 
 antecipar a detecção de vulnerabilidades para as fases iniciais do desenvolvimento, reduzindo o tempo e o custo de correção.
